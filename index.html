@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ShopSphere | Home</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/navbar.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/products.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+        🛒 ShopSphere
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a
+            href="cart.html"
+            class="cart-link"
+        >
+            🛒 Cart
+
+            <span class="cart-count">
+                0
+            </span>
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-badge">
+            ✨ NEW COLLECTION
+        </span>
+
+        <h1>
+            Discover Products
+            You'll Love.
+        </h1>
+
+        <p>
+            Explore electronics, clothing,
+            accessories and more at
+            amazing prices.
+        </p>
+
+        <a
+            href="products.html"
+            class="primary-btn"
+        >
+            Shop Now →
+        </a>
+
+    </div>
+
+
+    <div class="hero-visual">
+
+        🛍️
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-title">
+
+        <span>
+            EXPLORE
+        </span>
+
+        <h2>
+            Shop By Category
+        </h2>
+
+    </div>
+
+
+    <div class="category-grid">
+
+        <a
+            href="products.html"
+            class="category-card"
+        >
+            💻
+            <h3>Electronics</h3>
+            <p>Latest gadgets</p>
+        </a>
+
+
+        <a
+            href="products.html"
+            class="category-card"
+        >
+            👕
+            <h3>Clothing</h3>
+            <p>Modern fashion</p>
+        </a>
+
+
+        <a
+            href="products.html"
+            class="category-card"
+        >
+            👟
+            <h3>Shoes</h3>
+            <p>Comfort & style</p>
+        </a>
+
+
+        <a
+            href="products.html"
+            class="category-card"
+        >
+            🎒
+            <h3>Accessories</h3>
+            <p>Complete your look</p>
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="section featured">
+
+    <div class="section-title">
+
+        <span>
+            FEATURED
+        </span>
+
+        <h2>
+            Popular Products
+        </h2>
+
+    </div>
+
+
+    <div
+        id="featuredProducts"
+        class="product-grid"
+    >
+    </div>
+
+
+    <div class="center-btn">
+
+        <a
+            href="products.html"
+            class="secondary-btn"
+        >
+            View All Products
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="promo">
+
+    <div>
+
+        <span>
+            SPECIAL OFFER
+        </span>
+
+        <h2>
+            Get 10% OFF
+            on orders above ₹3000
+        </h2>
+
+        <p>
+            Shop your favorite products
+            and save more.
+        </p>
+
+    </div>
+
+    <div class="promo-icon">
+        🎁
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 ShopSphere
+    </p>
+
+    <p>
+        HTML • CSS • JavaScript
+    </p>
+
+</footer>
+
+
+<script src="data/products-data.js"></script>
+
+<script src="js/storage.js"></script>
+
+<script src="js/products.js"></script>
+
+<script src="js/app.js"></script>
+
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        const container =
+            document.getElementById(
+                "featuredProducts"
+            );
+
+
+        container.innerHTML =
+            products
+                .slice(0, 4)
+                .map(createProductCard)
+                .join("");
+
+    }
+);
+
+</script>
+
+</body>
+
+</html>

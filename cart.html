@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ShopSphere | Cart</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/navbar.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/cart.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+        🛒 ShopSphere
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="cart.html">
+            🛒 Cart
+            <span class="cart-count">0</span>
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="page-header">
+
+    <span>
+        SHOPPING
+    </span>
+
+    <h1>
+        Your Cart
+    </h1>
+
+</section>
+
+
+<section class="section cart-layout">
+
+    <div
+        id="cartContainer"
+        class="cart-container"
+    >
+    </div>
+
+
+    <aside class="cart-summary">
+
+        <h2>
+            Order Summary
+        </h2>
+
+
+        <div class="summary-row">
+
+            <span>
+                Subtotal
+            </span>
+
+            <strong id="subtotal">
+                ₹0
+            </strong>
+
+        </div>
+
+
+        <div class="summary-row">
+
+            <span>
+                Shipping
+            </span>
+
+            <strong id="shipping">
+                ₹0
+            </strong>
+
+        </div>
+
+
+        <div class="summary-row">
+
+            <span>
+                Discount
+            </span>
+
+            <strong
+                id="discount"
+                class="discount"
+            >
+                -₹0
+            </strong>
+
+        </div>
+
+
+        <hr>
+
+
+        <div class="summary-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="grandTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+
+        <a
+            href="checkout.html"
+            class="checkout-btn"
+        >
+            Proceed to Checkout →
+        </a>
+
+
+        <a
+            href="products.html"
+            class="continue-btn"
+        >
+            Continue Shopping
+        </a>
+
+    </aside>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 ShopSphere
+    </p>
+
+</footer>
+
+
+<script src="data/products-data.js"></script>
+
+<script src="js/storage.js"></script>
+
+<script src="js/products.js"></script>
+
+<script src="js/app.js"></script>
+
+<script src="js/cart.js"></script>
+
+</body>
+
+</html>

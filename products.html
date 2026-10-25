@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ShopSphere | Products</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/navbar.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/products.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+        🛒 ShopSphere
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a
+            href="cart.html"
+            class="cart-link"
+        >
+            🛒 Cart
+
+            <span class="cart-count">
+                0
+            </span>
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="page-header">
+
+    <span>
+        OUR COLLECTION
+    </span>
+
+    <h1>
+        All Products
+    </h1>
+
+    <p>
+        Find the perfect products
+        for your everyday needs.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <div class="filter-panel">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search products..."
+        >
+
+
+        <select id="categoryFilter">
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="Electronics">
+                Electronics
+            </option>
+
+            <option value="Clothing">
+                Clothing
+            </option>
+
+            <option value="Shoes">
+                Shoes
+            </option>
+
+            <option value="Accessories">
+                Accessories
+            </option>
+
+            <option value="Home">
+                Home
+            </option>
+
+        </select>
+
+
+        <select id="priceFilter">
+
+            <option value="all">
+                All Prices
+            </option>
+
+            <option value="under500">
+                Under ₹500
+            </option>
+
+            <option value="500-1000">
+                ₹500 - ₹1000
+            </option>
+
+            <option value="1000-2000">
+                ₹1000 - ₹2000
+            </option>
+
+            <option value="above2000">
+                Above ₹2000
+            </option>
+
+        </select>
+
+
+        <select id="sortFilter">
+
+            <option value="default">
+                Sort By
+            </option>
+
+            <option value="low-high">
+                Price: Low → High
+            </option>
+
+            <option value="high-low">
+                Price: High → Low
+            </option>
+
+            <option value="rating">
+                Highest Rating
+            </option>
+
+            <option value="name">
+                Name: A → Z
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div
+        id="productContainer"
+        class="product-grid"
+    >
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 ShopSphere
+    </p>
+
+    <p>
+        College Mini Project
+    </p>
+
+</footer>
+
+
+<script src="data/products-data.js"></script>
+
+<script src="js/storage.js"></script>
+
+<script src="js/products.js"></script>
+
+<script src="js/app.js"></script>
+
+<script src="js/products-page.js"></script>
+
+</body>
+
+</html>
